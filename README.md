@@ -4,7 +4,12 @@ Problem Statement 1:
 Implementation of Bipartite Max Cover
 Technique : Greedy Algorithm
 Time complexity :
-For a bipartite graph G – Time complexity is  O(mn^2), where n is the number of elements in the second set and m is the number of edges in the first set.
+Each iteration except the last one matches two previously free vertices-one from each of the sets V and U. 
+Therefore, the total number of iterations cannot exceed ⌊n/2⌋ + 1, 
+where n = |V| + |U| is the number of vertices in the graph. The time spent on each iteration is in O(n + m), 
+where m =|E| is the number of edges in the graph. 
+Hence, the time efficiency of the algorithm is О(n(n+m)).
+
 
 
 Problem Statement 2:
